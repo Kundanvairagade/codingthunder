@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    /* height: 65px; */
+    align-items: center;
+    justify-items: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+.nav-list{ 
+    width: 70%;
+    /* background-color: black; */
+    display: flex;
+    text-align: center;
+}
+.nav-list li{
+    list-style: none;
+    padding: 18px;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-list li a:hover{
+   color: gray;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 33%;
+    /* border: 3px solid white; */
+    border-radius: 50%;
+    margin: 3px;
+}
+.rightnav{
+    /* background-color: darkblue; */
+    width: 30%;
+    padding: 10px 40px;
+    text-align: right;
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid gray;
+    border-radius: 8px;
+    outline: none;
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url('https://source.unsplash.com/1600x1000/?hack,program');
+    background-size: cover;
+    background-blend-mode: darken; 
+}
+.firstsec{
+    height: 100vh;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 78%;
+    max-width: 62%;
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.firsthalf{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.seconfhalf img{
+    margin: auto;
+    /* border: 4px saddlebrown; */
+    width: 67%;
+    display: block;
+    border: 4px solid;
+    border-radius: 113%;
+}
+.text-big{
+     font-size: 25px;
+     font-weight: bold;
+}
+.text-small{
+   font-size: 15px;
+}
+.btn{
+    padding: 8px 23px;
+    margin: 10px 7px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 8%;
+}
+
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+.section{
+  padding: 0px;
+}
+.secright{
+    display: flex;
+    padding-top: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 85%;
+    margin: auto;
+}
+.paras{
+    padding: 5px 5px;
+}
+.left{
+    flex-direction: row-reverse;
+}
+.thumbnil img{
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 25px;
+    height: 220px;
+}
+.text-center{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+.contact{
+    background-color: lightgray;
+    height: 400px;
+    margin-top: 37px;
+}
+.form{
+    max-width: 800px;
+    margin: 20px auto;
+}
+.form input{
+    width: 100%;
+    font-size: 18px;
+    border: 2px solid gray;
+    border-radius: 9px;
+    padding: 5px;
+    margin-top: 15px;
+}
+.btn-dark{
+    background: blue;
+    width: 100%;
+    color: wheat;
+}
+.footer{
+    background: black;
+    height: 50px;
+}
+.text-footer{
+    padding: 10px 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 10px;
+    color: white;  
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+}
+.burgur{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 25px;
+}
+@media only screen and (max-width:1140px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        height: 400px;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+    .rightnav {
+        text-align: center;
+        /* width: 100%; */
+    }
+    navbar .btn{
+        width: 100%;
+    }
+    #search {
+        width: 100%;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }.box-main{
+        flex-direction: column-reverse;
+        width: 100%;
+    }.secright{
+        flex-direction: column-reverse;
+    }.text-small{
+        text-align: center;
+    }.text-big{
+        text-align: center;
+    }.buttons{
+        margin-top: 10px;
+        text-align: center;
+    }.paras{
+        padding: 0px;
+    }.burgur{
+        display: block;
+    }
+}
